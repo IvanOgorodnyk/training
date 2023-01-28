@@ -1,7 +1,10 @@
-# word = "Football"
-#
-# print(word[1:-1:2])
+data = (4, 6, 7, 3, 5, True, 4.3, "Yes")
 
-lis = [6, 4, "Liberate", True, 6.5]
-print(lis[2:5:2])
-print(lis[::2])
+for el in data:
+    print(el)
+
+nums = [5, 7, 8]
+
+new_data = tuple(nums)
+word = tuple("Hello world")
+print(word)
