@@ -1,16 +1,19 @@
-#data = set("hello")
-data = {5, 7, 4, 8, 3, 5}
+def minimal(l):
+    min_number = l[0]
+    for el in l:
+        if el < min_number:
+            min_number = el
 
-data.add(21)
-data.update([123, True, 66, 2])
-data.remove(True)
-data.pop()
-#data.clear()
+    return min_number
 
-nums = [5, 7, 3, 5, 5]
-new_nums = set(nums)
+nums1 = [5 ,7, 8 ,1.5]
+min1 = minimal(nums1)
 
-new_data = frozenset([123, True, 66, 2, 5, 7, 3, 5, 5])
+nums2 = [5.5, 7.4, 8, 1.9, 2.4]
+min2 = minimal(nums2)
 
 
-print(new_data)
+if min1 < min2:
+    print(min1)
+else:
+    print(min2)
