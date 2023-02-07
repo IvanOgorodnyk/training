@@ -1,3 +1,16 @@
-func = lambda x, y: x * y
-res = func(5, 2)
-print(res)
+#data = input("Enter text")
+
+#file = open("data/text.txt", "a")
+
+#file.write(data + "\n")
+
+#file.close()
+
+file = open("data/text.txt", "r")
+
+#print(file.read())
+
+for line in file:
+    print(line, end="")
+
+file.close()
