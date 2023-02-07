@@ -1,5 +1,5 @@
-try:
-    with open("txt.txt", "r", encoding="utf-8") as file:
-        print(file.read())
-except FileNotFoundError:
-    print("file not found")
+import datetime as d, sys, os, platform
+from math import sqrt as s, ceil
+
+#print(d.datetime.now().time().hour)
+print(ceil(s(100)))
