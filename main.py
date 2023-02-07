@@ -1,16 +1,11 @@
-#data = input("Enter text")
+x = 0
+while x == 0:
+    try:
+        x = int(input("Enter number: "))
+        x += 5
+        print(x)
+    except ValueError:
+        print("Better enter number!")
 
-#file = open("data/text.txt", "a")
 
-#file.write(data + "\n")
 
-#file.close()
-
-file = open("data/text.txt", "r")
-
-#print(file.read())
-
-for line in file:
-    print(line, end="")
-
-file.close()
