@@ -3,7 +3,11 @@ class Cat:
     age = None
     isHappy = None
 
-    def set_data(self, name, age, isHappy):
+    def __init__(self, name=None, age=None, isHappy=None):
+        self.set_data(name, age, isHappy)
+        self.get_data()
+
+    def set_data(self, name = None, age = None, isHappy = None):
         self.name = name
         self.age = age
         self.isHappy = isHappy
@@ -13,10 +17,5 @@ class Cat:
 
 
 cat1 = Cat()
-cat1.set_data("Barsik", 3, True)
 
-cat2 = Cat()
-cat2.set_data("Shopa", 2, False)
-
-cat1.get_data()
-cat2.get_data()
+cat2 = Cat("Shopa", 2, False)
